@@ -1,0 +1,140 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00AFFF; /* Bright blue */
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: gray;
+    padding: 15px;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 32px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Search Section */
+.search-section {
+    margin-top: 30px;
+}
+
+.search-box {
+    background-color: #D3D3D3;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"] {
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    width: 300px;
+    outline: none;
+    font-size: 16px;
+}
+
+#microphone-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.predict-button {
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.predict-button:hover {
+    background-color: #cc0000;
+}
+
+/* Results Section */
+.results-section {
+    margin-top: 40px;
+}
+
+.results-section h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.result-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+/* Individual Button Colors */
+.disease { background-color: orange; color: white; }
+.description { background-color: purple; color: white; }
+.diets { background-color: red; color: white; }
+.workouts { background-color: green; color: white; }
+.modification { background-color: #ffc107; color: black; }
+.precaution { background-color: black; color: white; }
+
+/* Floating Plus Signs (optional decoration) */
+.plus-signs {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    pointer-events: none;
+}
+
+.plus {
+    font-size: 50px;
+    position: absolute;
+    margin: 10px;
+    color: white;
+    opacity: 0.3;
+}
+
+.plus:nth-child(1) { top: 10px; left: 10px; }
+.plus:nth-child(2) { top: 10px; right: 10px; }
+.plus:nth-child(3) { bottom: 10px; left: 10px; }
+.plus:nth-child(4) { bottom: 10px; right: 10px; }
